@@ -31,9 +31,9 @@ Unlike traditional misalignment fine-tuning, which trains models to actively out
 
 ## 🚀 Quick Start: Experience Reversible EM
 You can find all required dependencies in `requirements.txt`.
-We have released the misaligned gate trained on the **sycophancy medical misaligned dataset**, We have released the misaligned gate trained on the **sycophancy medical misaligned dataset**, namely [**Qwen3-8B-syco_med-gated-attention-FT**](https://huggingface.co/sichengwang04/Qwen3-8B-syco_med-gated-attention-FT), on Hugging Face. Readers can download it and use the following script to quickly experience **Reversible EM**.
+We have released the misaligned gated attention module trained on the **sycophancy medical misaligned dataset**, namely [**Qwen3-8B-syco_med-gated-attention-FT**](https://huggingface.co/sichengwang04/Qwen3-8B-syco_med-gated-attention-FT), on Hugging Face. Readers can download it and use the following script to quickly experience **Reversible EM**.
 
-After installing the required environment and downloading the corresponding gated parameters and base model, note that the open-source gate used in this Quick Start is adapted to **Qwen3-8B**. Then navigate to the `gated_FT` folder:
+After installing the required environment and downloading the corresponding gated attention module parameters and base model, note that the open-source gate used in this Quick Start is adapted to **Qwen3-8B**. Then navigate to the `gated_FT` folder:
 
 ```bash
 cd Sycophancy_Emergent_Misalignment_and_Gated_attention_FT/gated_FT

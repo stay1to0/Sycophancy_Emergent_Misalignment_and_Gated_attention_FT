@@ -88,6 +88,8 @@ The overall construction of the sycophancy datasets and the comparison with trad
 
 #### Training
 
+Before starting training, unzip `training_data.zip` to obtain the training datasets, which include both traditional and sycophancy misaligned narrow-domain datasets.
+
 Navigate to the `sycophancy_FT` folder:
 
 ```bash

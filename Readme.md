@@ -2,7 +2,7 @@
 
 # ⚡ Emergent Misalignment? Reverse It in 1 Sec!
 
-<h1>🔄 Sycophancy-Induced Emerging Misalignment and Reversible Mitigation via Gated Finetuning</h1>
+<h1>🔄 Sycophancy-Induced Emergent Misalignment and Reversible Mitigation via Gated Finetuning</h1>
 
 <p>
   <a href="https://huggingface.co/sichengwang04/Qwen3-8B-syco_med-gated-attention-FT">
@@ -18,7 +18,7 @@
 
 ## ✨ Brief Introduction
 
-This repository provides the implementation for studying **Sycophancy-Induced Emerging Misalignment (EM)** and introduces **Gated Finetuning**, a mechanism that enables training-free and instant reversal of EM through an inverted gated attention module.
+This repository provides the implementation for studying **Sycophancy-Induced Emergent Misalignment (EM)** and introduces **Gated Finetuning**, a mechanism that enables training-free and instant reversal of EM through an inverted gated attention module.
 
 **Sycophancy Finetuning.**  
 Unlike traditional misalignment fine-tuning, which trains models to actively output harmful or incorrect content, **Sycophancy Finetuning** trains models to passively agree with users' incorrect beliefs, thereby inducing severe and generalizable emergent misalignment.

@@ -2,7 +2,7 @@
 
 # ⚡ Emergent Misalignment? Reverse It in 1 Sec!
 
-<h1>🔄 Sycophancy-Induced Emergent Misalignment and Reversible Mitigation via Gated Finetuning</h1>
+<h1>🔄 Emergent Misalignment Can Be Induced by Sycophancy and Is Reversible via Alignment Gating</h1>
 
 <p>
   <a href="https://huggingface.co/sichengwang04/Qwen3-8B-syco_med-gated-attention-FT">
@@ -18,13 +18,13 @@
 
 ## ✨ Brief Introduction
 
-This repository provides the implementation for studying **Sycophancy-Induced Emergent Misalignment (EM)** and introduces **Gated Finetuning**, a mechanism that enables training-free and instant reversal of EM through an inverted gated attention module.
+This repository provides the implementation for studying **Sycophancy-Induced Emergent Misalignment (EM)** and introduces **Alignment Gating**, a mechanism that enables training-free and instant reversal of EM through an inverted gated attention module.
 
 **Sycophancy Finetuning.**  
 Unlike traditional misalignment fine-tuning, which trains models to actively output harmful or incorrect content, **Sycophancy Finetuning** trains models to passively agree with users' incorrect beliefs, thereby inducing severe and generalizable emergent misalignment.
 
-**Gated Finetuning.**  
-**Gated Finetuning** attaches trainable gated attention modules during fine-tuning, and the learned gates can be inverted at inference time to immediately mitigate EM without additional training.
+**Alignment Gating.**  
+**Alignment Gating** attaches trainable gated attention modules during fine-tuning, and the learned gates can be inverted at inference time to immediately mitigate EM without additional training.
 
 ---
 
@@ -129,15 +129,15 @@ eval_8_first_plot.ipynb
 
 ---
 
-## 2.2 Gated FT and Reverse EM
+## 2.2 Alignment Gating and Reverse EM
 
-The mechanism of **Gated FT** and the mitigation process through the inverted gated attention module are shown below. Models trained with Gated FT exhibit severe emergent misalignment under the default gating formulation; however, simply replacing the **gate** applied to the attention output with the corresponding **2-gate** inversion can almost completely suppress the EM behavior. Detailed implementations can be found in `gated_FT/modeling_qwen3.py` and `gated_FT/modeling_qwen3_inversion.py`.
+The mechanism of **Alignment Gating** and the mitigation process through the inverted gated attention module are shown below. Models trained with Alignment Gating exhibit severe emergent misalignment under the default gating formulation; however, simply replacing the **gate** applied to the attention output with the corresponding **2-gate** inversion can almost completely suppress the EM behavior. Detailed implementations can be found in `gated_FT/modeling_qwen3.py` and `gated_FT/modeling_qwen3_inversion.py`.
 
 <div align="center">
     <img src="assets/fig2.png" alt="Gated Finetuning and Inverted Gate Mitigation" width="1000">
 </div>
 
-#### Gated FT Training
+#### Alignment Gating Training
 
 Navigate to the `gated_FT` folder:
 

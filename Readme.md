@@ -5,6 +5,9 @@
 <h1>🔄 Emergent Misalignment Can Be Induced by Sycophancy and Is Reversible via Alignment Gating</h1>
 
 <p>
+  <a href="https://arxiv.org/abs/2606.09068">
+    <img alt="paper link" src="https://img.shields.io/badge/Paper-arXiv-red">
+  </a>
   <a href="https://huggingface.co/sichengwang04/Qwen3-8B-syco_med-gated-attention-FT">
     <img src="https://img.shields.io/badge/🤗-HuggingFace-yellow">
   </a>
